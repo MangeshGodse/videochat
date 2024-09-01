@@ -49,7 +49,7 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
     });
 
 // Signaling server events (WebSocket or other signaling mechanism)
-const signalingServer = new WebSocket('ws://mangesh32godse.replit.app/');
+const signalingServer = new WebSocket('wss://mangesh32godse.replit.app/');
 
 signalingServer.onmessage = async (message) => {
     let data;
